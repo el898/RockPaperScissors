@@ -1,6 +1,8 @@
 var Choices = ["rock", "paper", "scissors"];
 var playerScore, computerScore;
 
+
+//function for computer choice
 function getComputerChoice() {
     var randomIndex = Math.floor(Math.random() * Choices.length);
     var computerChoice = Choices[randomIndex];
@@ -8,6 +10,7 @@ function getComputerChoice() {
     return computerChoice;
 }
 
+//function for player choice
 function playerChoice() {
     var selectChoice = prompt("Your Turn: " + Choices.join(', ')).toLowerCase();
     
@@ -18,6 +21,8 @@ function playerChoice() {
 
     return selectChoice;
 }
+
+//function to play games
 function playGame() {
   playerSelection = playerChoice();
   computerSelection = getComputerChoice();
