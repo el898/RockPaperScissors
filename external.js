@@ -23,9 +23,15 @@ function playGame() {
   computerSelection = getComputerChoice();
   if (playerSelection === computerSelection) {
     console.log("A Tie!");
-  } else if (computerSelection === "rock" && playerSelection === "scissors") {
-    computerScore++;
-    console.log("Rock beats Scissors");
   }
+  if ((computerSelection === "rock" && playerSelection === "scissors") || (computerSelection === "scissors" && playerSelection === "paper") || (computerSelection === "paper" && playerSelection === "rock")) {
+    computerScore++;
+   console.log(`You lose! ${computerSelection} beats ${playerSelection}.`);
+  }
+  else{
+    playerScore++;
+    console.log(`You Win! ${playerSelection} beats ${computerSelection}.`)
+  }
+
 }
 playGame();
