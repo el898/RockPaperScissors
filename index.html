@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-       
-        
-        <script src="external.js" async defer></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar" id="navbarlink">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+        <li>
+          <a href="./instruction.html">Instructions</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <div><i class="fa fa-bars" onclick="showmenu()"></i></div>
+    </div>
+    <header>
+      <h1>Rock || Paper || Scissors</h1>
+    </header>
+
+    <div class="game">
+      <div class="player">
+        <h2><em>Player</em></h2>
+        <p>Score</p>
+        <div class="images">
+          <img src="Images/rock.jpg" />
+          <img src="Images/pexels-beyzaa-yurtkuran-15988811.jpg" />
+          <img src="Images/pexels-karolina-grabowska-4226896.jpg" />
+        </div>
+        <div class="btn-flex">
+          <button>Rock</button>
+          <button>Paper</button>
+          <button class="scis">Scissors</button>
+        </div>
+      </div>
+      <div class="computer">
+        <h2><em>Computer</em></h2>
+        <p>Score:</p>
+        <div class="images2">
+          <img src="Images/rock.jpg" />
+          <img src="Images/pexels-beyzaa-yurtkuran-15988811.jpg" />
+          <img src="Images/pexels-karolina-grabowska-4226896.jpg" />
+        </div>
+
+        <div class="btn-flex">
+          <button>Rock</button>
+          <button>Paper</button>
+          <button class="scis">Scissors</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="external.js" async defer></script> -->
+    <script>
+      var navbarlink = document.getElementById("navbarlink");
+      function showmenu() {
+        navbarlink.style.right = "0";
+      }
+      function hidemenu() {
+        navbarlink.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
