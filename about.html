@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background-image: url(Images/pexels-martin-péchy-2078266.jpg);
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Header styles */
+
+            header {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        /* Content container styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Navbar styles */
+.navbar .fa {
+    display: none;
+}
+
+.navbar {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #851818cc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+        /* Social media icons */
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color:  white;
+            text-decoration: none;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbarlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+            <div><i class="fa fa-bars" onclick="showmenu()"></i></div>
+        </div>
+        <h1>Rock || Paper || Scissors</h1>
+        <p><em>Game Instructions</em></p>
+    </header>
+
+    <div class="container">
+        <p>Welcome to the Rock Paper Scissors game! This game is a classic and fun way to test your luck and strategy. Here's a bit about us:</p>
+        
+        <h2>Our Mission</h2>
+        <p>We're dedicated to creating simple and entertaining games that bring joy to people of all ages. Rock Paper Scissors is one of our favorites!</p>
+
+        <h2>Connect with Us</h2>
+        <p>Feel free to connect with us on social media:</p>
+
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rock Paper Scissors Game | Created by [Your Name]</p>
+        <p>Find me on GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+    </footer>
+    <script>
+        var navbarlink = document.getElementById("navbarlink");
+        function showmenu() {
+            navbarlink.style.right = "0";
+        }
+        function hidemenu() {
+            navbarlink.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

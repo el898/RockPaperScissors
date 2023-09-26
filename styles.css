@@ -38,7 +38,7 @@ h1 {
 }
 
 .navbar ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 13px;
 }
@@ -118,6 +118,30 @@ h1 {
 .computer .btn-flex > button {
     pointer-events: none;
 } /* Makes the computer button not clickable */
+
+ /* Footer styles */
+ footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* Media queries for responsiveness */
 
